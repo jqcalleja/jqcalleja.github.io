@@ -1,0 +1,172 @@
+{
+    "rooms": [
+        {
+            "name": "CCS Project Room",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/22c896270290c2005a6627aac104b34c"
+        },
+        {
+            "name": "E401",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/49f39ec28c04a60eaa065d3e19077f86"
+        },
+        {
+            "name": "E407",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/f97fa905c1376d117286cd33bdc036eb"
+        },
+        {
+            "name": "E408",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/ec6f8ddd47d433b1ba93055fe3491bec"
+        },
+        {
+            "name": "E409",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/fa59cc55dddf852cc32fd6cfa4c58690"
+        },
+        {
+            "name": "E414",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/731b2d949e0e838958c50fdf1de20e82"
+        },
+        {
+            "name": "E415",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/6a435f05a7d02fc3be0bbe5df493ccc7"
+        },
+        {
+            "name": "E601",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/3b2a0a94c45c47030eac568c16809055"
+        },
+        {
+            "name": "E602",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/5c515f01de65dbbeabac5a1984ceba2a"
+        },
+        {
+            "name": "E603",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/201d65c8f95949e8cf05e7cdc5ded99e"
+        },
+        {
+            "name": "E608",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/c67fad7cb93c843d9ee3b8faf4b5f396"
+        },
+        {
+            "name": "E609",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/758946d1d7957224d696d7dfcf3d598b"
+        },
+        {
+            "name": "E610",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/6ccaa4618490580825ae9ec38e30e3eb"
+        },
+        {
+            "name": "E701",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/c8e716027438615a82d4dbc9bcf4228e"
+        },
+        {
+            "name": "E704",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/87817aff22b271af71620dcbf256ad0e"
+        },
+        {
+            "name": "E709",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/9c079cda8d7b1f99a991a09292ef38bf"
+        },
+        {
+            "name": "E710",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/a26c70a5a8290453a93d6c8fbb1fdff7"
+        },
+        {
+            "name": "E711",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/bee46920d597aea7c1f2a7ba68aa1cee"
+        },
+        {
+            "name": "E712",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/daeb4674e6fffb868e09bb13570ca912"
+        },
+        {
+            "name": "F501",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/305ac12ced8302e15e528997b31021a3"
+        },
+        {
+            "name": "F502",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/cfd34d2e7041b647af6c9a9820b957c1"
+        },
+        {
+            "name": "F503",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/534f6ff31ec3c8e37febec04e4f37ece"
+        },
+        {
+            "name": "F608",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/7872a16224ef6b3a8a4b5810b0672e65"
+        },
+        {
+            "name": "F609",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/69c5102f0e8b1f74ae88516896728eec"
+        },
+        {
+            "name": "F610",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/518f4c91f4c11aa1200d0207dac202f4"
+        },
+        {
+            "name": "F611",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/ce227353d25eebdba7687daf41d4780a"
+        },
+        {
+            "name": "F704",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/e5a4e4c83efbb2d7d3bbe419fc55d5e1"
+        },
+        {
+            "name": "F706",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/67c3778fb5542ba03c982c1bc47b9819"
+        },
+        {
+            "name": "F707",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/43a383e047519cae690362d0501ccf6f"
+        },
+        {
+            "name": "F1202",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/95d0224ff1d4d1cf8e3ca424d9c5b8ee"
+        },
+        {
+            "name": "F1203",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/a6bb63ea004c3f8d1e2c146d5a53bb84"
+        },
+        {
+            "name": "F1204",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/3fd3fa1e61144dfa8b63cb0f076a41ec"
+        },
+        {
+            "name": "F1206",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/8fbb862819bd507d3d657154410a4b8e"
+        },
+        {
+            "name": "F1207",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/73582af9ee15045ff53500d02581c37e"
+        },
+        {
+            "name": "F1208",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/e41402e53c80d3164a4231e4a6a42464"
+        },
+        {
+            "name": "F1209",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/28bac76905170b7fc0efd867a7459b46"
+        },
+        {
+            "name": "F1211",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/0982842e6954848e9fb1a3703a868807"
+        },
+        {
+            "name": "Lounge 2",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/1b69fb7b3619e6405f6c172068e7a2b0"
+        },
+        {
+            "name": "Lounge 3",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/9297d154b02c9ab3c3d3922a4ee54132"
+        },
+        {
+            "name": "Lounge 4",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/967ee41fb79086a1aa6ac0ee5c27913c"
+        },
+        {
+            "name": "Presentation Room 1",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/b0a085947e5acb5d2e60c54decc701ee"
+        },
+        {
+            "name": "Presentation Room 2",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/3efd34879c3753a003babf124c1b5432"
+        }
+    ]
+}
