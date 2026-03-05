@@ -1,7 +1,7 @@
 {
     "rooms": [
         {
-            "name": "ENB - CCS Project Room",
+            "name": "CCS Project Room",
             "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/22c896270290c2005a6627aac104b34c"
         },
         {
@@ -147,6 +147,10 @@
         {
             "name": "F1211",
             "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/0982842e6954848e9fb1a3703a868807"
+        },
+        {
+            "name": "F1505",
+            "url": "http://172.31.7.50/capcara/cara/user/onsite_cara/1d786f7ebafc7b66eb5d08ae029d758e"
         },
         {
             "name": "Lounge 2",

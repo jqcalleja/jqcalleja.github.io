@@ -12,6 +12,8 @@ $(document).ready(function () {
         alert("Error loading JSON file.");
     });
 
+    console.log(roomsData);
+
     // =============================
     // Render Rooms Function
     // =============================
