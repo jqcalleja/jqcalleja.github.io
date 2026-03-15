@@ -1,31 +1,42 @@
 $(document).ready(function () {
     let currentSection = "";
+    let currentExam = "";
 
-    loadStudents(currentSection);
+    loadStudents();
 
-    /* Filter by section */
+    /* SECTION FILTER */
     $("#sectionFilter").change(function () {
         currentSection = $(this).val();
-        loadStudents(currentSection);
+        loadStudents();
     });
 
-    /* export button */
-    $("#exportBtn").click(function () {
-        window.location.href = "export_excel.php?section=" + currentSection;
+    /* EXAM FILTER */
+    $("#examFilter").change(function () {
+        currentExam = $(this).val();
+        loadStudents();
     });
 
-    /* Auto refresh every 5 seconds */
+    /* AUTO REFRESH */
     setInterval(function () {
-        loadStudents(currentSection);
+        loadStudents();
     }, 5000);
 
+    /* EXPORT */
+    $("#exportBtn").click(function () {
+        window.location.href =
+            "export_excel.php?section=" + currentSection +
+            "&exam=" + currentExam;
+    });
 
-    /* Function to load students */
-    function loadStudents(section) {
+    function loadStudents() {
         $.ajax({
             url: "fetch_students.php",
             type: "POST",
-            data: { section: section },
+
+            data: {
+                section: currentSection,
+                exam: currentExam
+            },
 
             success: function (data) {
                 $("#studentTable tbody").html(data);

@@ -16,7 +16,7 @@
 <body>
     <div class="container">
         <h2>Registered Students</h2>
-        <div class="filter">
+        <div class="filters">
             <label>Filter by Section</label>
             <select id="sectionFilter">
                 <option value="">All Sections</option>
@@ -26,25 +26,35 @@
             </select>
         </div>
 
+        <label>Filter by Certification Exam</label>
+            <select id="examFilter">
+                <option value="">All Certifications</option>
+                <option value="ITS: Python">ITS: Python</option>
+                <option value="ITS: JavaScript">ITS: JavaScript</option>
+            </select>
+        </div>
+
         <div class="actions">
             <button id="exportBtn">Export to Excel</button>
         </div>
 
-        <table id="studentTable">
-            <thead>
-                <tr>
-                    <th>ID Number</th>
-                    <th>Last Name</th>
-                    <th>First Name</th>
-                    <th>MI</th>
-                    <th>Email</th>
-                    <th>Section</th>
-                    <th>Certification Exam</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
+        <div class="table-container">
+            <table id="studentTable">
+                <thead>
+                    <tr>
+                        <th>ID Number</th>
+                        <th>Last Name</th>
+                        <th>First Name</th>
+                        <th>MI</th>
+                        <th>Email</th>
+                        <th>Section</th>
+                        <th>Certification Exam</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
     </div>
 </body>
 

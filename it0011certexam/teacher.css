@@ -31,7 +31,10 @@ h2 {
     margin-bottom: 20px;
 }
 
-.filter {
+.filters {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     margin-bottom: 15px;
 }
 
@@ -60,10 +63,15 @@ select {
     background: #15803d;
 }
 
-table {
+.table-container {
+    overflow-x: auto;
     width: 100%;
+}
+
+table {
+    min-width: 700px;
     border-collapse: collapse;
-    margin-top: 15px;
+    width: 100%;
 }
 
 th,
@@ -79,9 +87,13 @@ th {
 }
 
 @media(min-width:768px) {
+    .filters {
+        flex-direction: row;
+        align-items: end;
+        gap: 20px;
+    }
 
     select {
         width: 250px;
     }
-
 }
