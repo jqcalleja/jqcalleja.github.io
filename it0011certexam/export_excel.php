@@ -29,7 +29,7 @@ while($row = $result->fetch_assoc()){
         $row['first_name']."\t".
         $row['middle_initial']."\t".
         $row['email']."\t".
-        $row['section']."\n";
+        $row['section']."\n".
         $row['certification_exam']."\n";
 }
 
