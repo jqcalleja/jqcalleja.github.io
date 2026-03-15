@@ -30,9 +30,10 @@ if(!empty($params)){
 
 $stmt->execute();
 $result = $stmt->get_result();
-
+$count = 1;
 while($row = $result->fetch_assoc()){
     echo "<tr>";
+    echo "<td>".$count."</td>";
     echo "<td>".$row['id_number']."</td>";
     echo "<td>".$row['last_name']."</td>";
     echo "<td>".$row['first_name']."</td>";
@@ -41,6 +42,7 @@ while($row = $result->fetch_assoc()){
     echo "<td>".$row['section']."</td>";
     echo "<td>".$row['certification_exam']."</td>";
     echo "</tr>";
+    $count = $count + 1;
 }
 
 $stmt->close();
