@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Form</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Student Information</h2>
+        <form id="studentForm">
+            <label>ID Number</label>
+            <input type="text" name="id_number" id="id_number" required>
+
+            <label>Last Name</label>
+            <input type="text" name="last_name" id="last_name" required>
+
+            <label>First Name</label>
+            <input type="text" name="first_name" id="first_name" required>
+
+            <label>Middle Initial</label>
+            <input type="text" name="middle_initial" id="middle_initial" maxlength="1">
+
+            <label>Email Address</label>
+            <input type="email" name="email" id="email" required>
+
+            <label>Section</label>
+            <select name="section" id="section" required>
+                <option value="">Select Section</option>
+                <option value="TC25">TC25</option>
+                <option value="TC27">TC27</option>
+                <option value="TX23">TX23</option>
+            </select>
+
+            <label>Certification Exam</label>
+            <select name="certification_exam" id="certification_exam" required>
+                <option value="">Select Certification</option>
+                <option value="ITS: Python">ITS: Python</option>
+                <option value="ITS: JavaScript">ITS: JavaScript</option>
+            </select>
+
+            <button type="submit">Submit</button>
+
+            <p id="message"></p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

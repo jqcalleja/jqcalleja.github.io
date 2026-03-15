@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Teacher Dashboard</title>
+
+    <link rel="stylesheet" href="teacher.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="teacher.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Registered Students</h2>
+        <div class="filter">
+            <label>Filter by Section</label>
+            <select id="sectionFilter">
+                <option value="">All Sections</option>
+                <option value="TC25">TC25</option>
+                <option value="TC27">TC27</option>
+                <option value="TX23">TX23</option>
+            </select>
+        </div>
+
+        <div class="actions">
+            <button id="exportBtn">Export to Excel</button>
+        </div>
+
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>ID Number</th>
+                    <th>Last Name</th>
+                    <th>First Name</th>
+                    <th>MI</th>
+                    <th>Email</th>
+                    <th>Section</th>
+                    <th>Certification Exam</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

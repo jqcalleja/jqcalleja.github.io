@@ -1,0 +1,87 @@
+:root {
+    --primary: #2563eb;
+    --background: #f4f6f9;
+    --card: #ffffff;
+    --border: #d1d5db;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: var(--background);
+    padding: 20px;
+}
+
+.container {
+    background: var(--card);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter {
+    margin-bottom: 15px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    margin-top: 5px;
+}
+
+.actions {
+    margin-top: 10px;
+}
+
+.actions button {
+    padding: 10px 15px;
+    border: none;
+    background: #16a34a;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.actions button:hover {
+    background: #15803d;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    border: 1px solid var(--border);
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: var(--primary);
+    color: white;
+}
+
+@media(min-width:768px) {
+
+    select {
+        width: 250px;
+    }
+
+}
