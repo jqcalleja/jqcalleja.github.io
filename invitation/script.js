@@ -58,13 +58,18 @@ rsvpForm.addEventListener('submit', function (e) {
         svg.setAttribute('viewBox', `0 0 100 ${docHeight}`);
         svg.style.height = docHeight + 'px';
 
-        let d = `M 8 0`;
+        const isMobile = window.innerWidth <= 700;
+        const leftX = isMobile ? 20 : 8;
+        const rightX = isMobile ? 80 : 92;
+
+        let d = `M ${leftX} 0`;
         const segments = Math.max(6, Math.floor(docHeight / 400));
         for (let i = 1; i <= segments; i++) {
             const y = (docHeight / segments) * i;
-            const x = i % 2 === 0 ? 8 : 92;
+            const x = i % 2 === 0 ? leftX : rightX;
+            const midX = i % 2 === 0 ? rightX : leftX;
             const midY = y - (docHeight / segments) / 2;
-            d += ` Q ${i % 2 === 0 ? 92 : 8} ${midY}, ${x} ${y}`;
+            d += ` Q ${midX} ${midY}, ${x} ${y}`;
         }
         const path = document.getElementById('thread-path');
         path.setAttribute('d', d);
