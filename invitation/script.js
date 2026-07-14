@@ -88,12 +88,23 @@ rsvpForm.addEventListener('submit', function (e) {
         path.style.strokeDashoffset = len - (len * progress);
     }
 
-    window.addEventListener('scroll', onScroll, { passive: true });
-    window.addEventListener('resize', () => {
+    function rebuildAndRefresh() {
         const rebuilt = buildPath();
         path = rebuilt.path;
         len = rebuilt.len;
         onScroll();
-    });
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', rebuildAndRefresh);
+    window.addEventListener('load', rebuildAndRefresh);
+
+    // Catches height changes from late-loading images/fonts, which resize
+    // alone won't on mobile (this is the main mobile fix)
+    if ('ResizeObserver' in window) {
+        const ro = new ResizeObserver(rebuildAndRefresh);
+        ro.observe(document.body);
+    }
+
     onScroll();
 })();
