@@ -2,196 +2,244 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Wedding Invitation</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap"
+    <title>[Bride Name] & [Groom Name] — We're Getting Married</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500;1,9..144,600&family=Outfit:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-
-    <!-- HERO -->
-
-    <section class="hero">
-
-        <div class="overlay"></div>
-
-        <div class="hero-content">
-
-            <h1 id="couple">John ❤ Maria</h1>
-
-            <p class="tagline">Together With Their Families</p>
-
-            <p class="tagline-small">
-                Invite you to celebrate their wedding
+    <!-- ===================== HERO ===================== -->
+    <section id="hero" class="section">
+        <svg class="hero-blob" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#EAB4B8"
+                d="M 421 130 Q 470 230 430 330 Q 390 430 270 450 Q 150 470 90 370 Q 30 270 90 170 Q 150 70 270 60 Q 390 50 421 130 Z" />
+        </svg>
+        <div class="hero-inner">
+            <span class="eyebrow reveal is-visible">Together with our families</span>
+            <div class="hero-photo-frame reveal-scale is-visible">
+                <img src="https://placehold.co/600x750/f7dee0/5a4c46?text=Prenup+Photo"
+                    alt="Couple prenup photo placeholder">
+            </div>
+            <h1 class="hero-names reveal is-visible">
+                [Bride Name]
+                <span class="hero-amp">&amp;</span>
+                [Groom Name]
+            </h1>
+            <p class="hero-date reveal is-visible">
+                Are getting married &mdash; <strong>[Month Day, Year]</strong>
             </p>
-
-            <button id="openInvite">Open Invitation</button>
-
+            <div class="scroll-cue"><span></span>Scroll</div>
         </div>
-
     </section>
 
-
-
-    <!-- DETAILS -->
-
-    <section class="details" id="details">
-
-        <h2 data-aos="fade-up">Wedding Details</h2>
-
-        <div class="cards">
-
-            <div class="card" data-aos="zoom-in">
-
-                <h3>Date</h3>
-                <p>June 18, 2026</p>
-
-            </div>
-
-            <div class="card" data-aos="zoom-in">
-
-                <h3>Time</h3>
-                <p>4:00 PM</p>
-
-            </div>
-
-            <div class="card" data-aos="zoom-in">
-
-                <h3>Venue</h3>
-                <p>Garden Pavilion</p>
-
-            </div>
-
-            <div class="card" data-aos="zoom-in">
-
-                <h3>Dress Code</h3>
-                <p>Formal</p>
-
-            </div>
-
+    <!-- ===================== STORY ===================== -->
+    <section id="story" class="section reveal">
+        <div class="story-photo reveal-scale">
+            <img src="https://placehold.co/600x750/eab4b8/ffffff?text=Our+Story" alt="Couple story photo placeholder">
         </div>
-
+        <div>
+            <span class="eyebrow">Our story</span>
+            <p class="story-quote reveal">"[A short, heartfelt line about how you met or a favorite memory together goes
+                here.]"</p>
+            <p class="story-body reveal stagger-1">[A few sentences about your journey as a couple — how you met, a
+                favorite memory, or why you decided it was time to say "I do." Replace this placeholder with your own
+                story.]</p>
+        </div>
     </section>
 
-
-
-    <!-- LOVE STORY -->
-
-    <section class="story">
-
-        <h2 data-aos="fade-up">Our Love Story</h2>
-
-        <div class="timeline">
-
-            <div class="event" data-aos="fade-right">
-
-                <h3>First Meeting</h3>
-                <p>We met during our college years and instantly became close friends.</p>
-
+    <!-- ===================== COUNTDOWN ===================== -->
+    <section id="countdown" class="section">
+        <span class="eyebrow reveal is-visible">Save the date</span>
+        <h2 class="reveal is-visible">Counting down to forever</h2>
+        <div class="countdown-grid reveal is-visible">
+            <div class="countdown-unit">
+                <div class="countdown-num" id="cd-days">00</div>
+                <div class="countdown-label">Days</div>
             </div>
-
-            <div class="event" data-aos="fade-left">
-
-                <h3>First Date</h3>
-                <p>A simple coffee date that turned into hours of conversation.</p>
-
+            <div class="countdown-unit">
+                <div class="countdown-num" id="cd-hours">00</div>
+                <div class="countdown-label">Hours</div>
             </div>
-
-            <div class="event" data-aos="fade-right">
-
-                <h3>The Proposal</h3>
-                <p>Under the stars on a beautiful evening, we said yes to forever.</p>
-
+            <div class="countdown-unit">
+                <div class="countdown-num" id="cd-mins">00</div>
+                <div class="countdown-label">Minutes</div>
             </div>
-
+            <div class="countdown-unit">
+                <div class="countdown-num" id="cd-secs">00</div>
+                <div class="countdown-label">Seconds</div>
+            </div>
         </div>
-
     </section>
 
+    <!-- ===================== DETAILS ===================== -->
+    <section id="details" class="section">
+        <div class="details-heading reveal">
+            <span class="eyebrow">The details</span>
+            <h2>When &amp; where</h2>
+        </div>
+        <div class="details-grid">
+            <div class="detail-card reveal stagger-1">
+                <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 2v6M8 22h8a2 2 0 0 0 2-2v-6a6 6 0 0 0-12 0v6a2 2 0 0 0 2 2Z" />
+                </svg>
+                <h3>Ceremony</h3>
+                <p class="venue-name">[Ceremony Venue Name]</p>
+                <p>[Venue Address, City]</p>
+                <p>[Time], [Day, Month Date]</p>
+                <a class="detail-link" href="#">View map &rarr;</a>
+            </div>
+            <div class="detail-card reveal stagger-2">
+                <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M4 21V9l8-6 8 6v12M9 21v-6h6v6" />
+                </svg>
+                <h3>Reception</h3>
+                <p class="venue-name">[Reception Venue Name]</p>
+                <p>[Venue Address, City]</p>
+                <p>[Time], [Day, Month Date]</p>
+                <a class="detail-link" href="#">View map &rarr;</a>
+            </div>
+        </div>
+    </section>
 
-
-    <!-- GALLERY -->
-
-    <section class="gallery">
-
-        <h2 data-aos="fade-up">Gallery</h2>
-
+    <!-- ===================== GALLERY ===================== -->
+    <section id="gallery" class="section">
+        <div class="gallery-heading reveal">
+            <span class="eyebrow">Moments</span>
+            <h2>A few of our favorites</h2>
+        </div>
         <div class="gallery-grid">
-
-            <img src="https://picsum.photos/500?1">
-            <img src="https://picsum.photos/500?2">
-            <img src="https://picsum.photos/500?3">
-            <img src="https://picsum.photos/500?4">
-
+            <div class="gallery-item reveal-scale stagger-1">
+                <img src="https://placehold.co/700x850/eab4b8/ffffff?text=Photo+1" alt="placeholder">
+                <p class="gallery-cap">[Caption 1]</p>
+            </div>
+            <div class="gallery-item reveal-scale stagger-2">
+                <img src="https://placehold.co/500x600/f7dee0/5a4c46?text=Photo+2" alt="placeholder">
+                <p class="gallery-cap">[Caption 2]</p>
+            </div>
+            <div class="gallery-item reveal-scale stagger-3">
+                <img src="https://placehold.co/500x600/e8ce8b/241b18?text=Photo+3" alt="placeholder">
+                <p class="gallery-cap">[Caption 3]</p>
+            </div>
+            <div class="gallery-item reveal-scale stagger-1">
+                <img src="https://placehold.co/900x450/d4667a/ffffff?text=Photo+4" alt="placeholder">
+                <p class="gallery-cap">[Caption 4]</p>
+            </div>
+            <div class="gallery-item reveal-scale stagger-2">
+                <img src="https://placehold.co/500x600/f7dee0/5a4c46?text=Photo+5" alt="placeholder">
+                <p class="gallery-cap">[Caption 5]</p>
+            </div>
         </div>
-
     </section>
 
-
-
-    <!-- COUNTDOWN -->
-
-    <section class="countdown">
-
-        <h2>Countdown to Our Wedding</h2>
-
-        <div id="timer">
-
-            <div>
-                <span id="days"></span>
-                <p>Days</p>
-            </div>
-
-            <div>
-                <span id="hours"></span>
-                <p>Hours</p>
-            </div>
-
-            <div>
-                <span id="minutes"></span>
-                <p>Minutes</p>
-            </div>
-
-            <div>
-                <span id="seconds"></span>
-                <p>Seconds</p>
-            </div>
-
+    <!-- ===================== ENTOURAGE ===================== -->
+    <section id="entourage" class="section">
+        <div class="entourage-heading reveal">
+            <span class="eyebrow">With gratitude</span>
+            <h2>Our entourage</h2>
         </div>
-
+        <div class="entourage-grid">
+            <div class="entourage-col reveal stagger-1">
+                <h3>Parents of the Bride</h3>
+                <ul>
+                    <li><strong>[Parent Name]</strong></li>
+                    <li><strong>[Parent Name]</strong></li>
+                </ul>
+                <h3 style="margin-top:2rem;">Principal Sponsors</h3>
+                <ul>
+                    <li>[Sponsor Name]</li>
+                    <li>[Sponsor Name]</li>
+                    <li>[Sponsor Name]</li>
+                </ul>
+            </div>
+            <div class="entourage-col reveal stagger-2">
+                <h3>Parents of the Groom</h3>
+                <ul>
+                    <li><strong>[Parent Name]</strong></li>
+                    <li><strong>[Parent Name]</strong></li>
+                </ul>
+                <h3 style="margin-top:2rem;">Best Man &amp; Maid of Honor</h3>
+                <ul>
+                    <li>[Name]</li>
+                    <li>[Name]</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
+    <!-- ===================== DRESS CODE ===================== -->
+    <section id="dresscode" class="section">
+        <div class="details-heading reveal">
+            <span class="eyebrow">Attire</span>
+            <h2>Dress code</h2>
+        </div>
+        <p class="dresscode-note reveal">[Formal / Semi-formal attire]. Kindly wear our wedding colors and let the bride
+            shine in white. Suggested palette below.</p>
+        <div class="swatches reveal stagger-1">
+            <div class="swatch">
+                <div class="swatch-circle swatch-blush"></div><span>Blush</span>
+            </div>
+            <div class="swatch">
+                <div class="swatch-circle swatch-gold"></div><span>Gold</span>
+            </div>
+            <div class="swatch">
+                <div class="swatch-circle swatch-rose"></div><span>Rose</span>
+            </div>
+            <div class="swatch">
+                <div class="swatch-circle swatch-ivory"></div><span>Ivory</span>
+            </div>
+        </div>
+    </section>
 
+    <!-- ===================== RSVP ===================== -->
+    <section id="rsvp" class="section">
+        <div class="rsvp-box reveal-scale">
+            <h2>Kindly RSVP</h2>
+            <p class="rsvp-sub">Please respond by [RSVP Deadline Date]</p>
+            <form id="rsvp-form">
+                <div class="form-row">
+                    <label for="name">Full name</label>
+                    <input type="text" id="name" placeholder="Juan Dela Cruz" required>
+                </div>
+                <div class="form-row">
+                    <label>Will you attend?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="attend" value="yes" checked> Joyfully accept</label>
+                        <label><input type="radio" name="attend" value="no"> Regretfully decline</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="guests">Number of guests</label>
+                    <input type="text" id="guests" placeholder="e.g. 2">
+                </div>
+                <div class="form-row">
+                    <label for="message">Message for the couple</label>
+                    <textarea id="message" placeholder="Leave a well-wish..."></textarea>
+                </div>
+                <button type="submit" class="rsvp-submit">Send RSVP</button>
+                <p class="rsvp-thanks" id="rsvp-thanks">Thank you! We can't wait to celebrate with you. &hearts;</p>
+            </form>
+            <p class="rsvp-alt">
+                Or reach us directly at <strong>[RSVP Contact Number / Email]</strong>
+            </p>
+        </div>
+    </section>
 
-    <footer>
-
-        <p>We can't wait to celebrate with you ❤</p>
-
+    <!-- ===================== FOOTER ===================== -->
+    <footer id="site-footer">
+        <div class="footer-amp">[B] &amp; [G]</div>
+        <p class="footer-hashtag">#[WeddingHashtag]</p>
+        <p class="footer-note">Thank you for being part of our story. We can't wait to celebrate this new chapter with
+            the people we love most.</p>
     </footer>
 
-
-
-    <!-- LIBRARIES -->
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-
     <script src="script.js"></script>
-
 </body>
 
 </html>
