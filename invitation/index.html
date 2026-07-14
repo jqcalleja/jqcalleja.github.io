@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Bride Name] & [Groom Name] — We're Getting Married</title>
+    <title>Wedding Invitation</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,27 +14,44 @@
 </head>
 
 <body>
+    <header class="site-nav">
+        <a class="nav-mark" href="#hero" aria-label="Back to the invitation cover">
+            <span data-field="initials">M &amp; J</span>
+        </a>
+        <nav class="nav-links" aria-label="Wedding sections">
+            <a href="#story">Story</a>
+            <a href="#details">Details</a>
+            <a href="#dresscode">Attire</a>
+            <a class="nav-rsvp" href="#rsvp">RSVP</a>
+        </nav>
+    </header>
+
+    <main>
 
     <!-- ===================== HERO ===================== -->
     <section id="hero" class="section">
-        <svg class="hero-blob" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-            <path fill="#EAB4B8"
-                d="M 421 130 Q 470 230 430 330 Q 390 430 270 450 Q 150 470 90 370 Q 30 270 90 170 Q 150 70 270 60 Q 390 50 421 130 Z" />
-        </svg>
         <div class="hero-inner">
             <span class="eyebrow reveal is-visible">Together with our families</span>
+            <p class="invite-line reveal is-visible">You are warmly invited to celebrate the wedding of</p>
             <div class="hero-photo-frame reveal-scale is-visible">
                 <img src="https://placehold.co/600x750/f7dee0/5a4c46?text=Prenup+Photo"
-                    alt="Couple prenup photo placeholder">
+                    alt="Couple smiling during a pre-wedding portrait" fetchpriority="high">
             </div>
             <h1 class="hero-names reveal is-visible">
-                [Bride Name]
+                <span data-field="brideFirst">Mara</span>
                 <span class="hero-amp">&amp;</span>
-                [Groom Name]
+                <span data-field="groomFirst">Julian</span>
             </h1>
             <p class="hero-date reveal is-visible">
-                Are getting married &mdash; <strong>[Month Day, Year]</strong>
+                <time datetime="2026-12-12T15:00:00+08:00" data-field="displayDate">December 12, 2026</time>
+                <span>at</span>
+                <strong data-field="displayTime">3:00 PM</strong>
             </p>
+            <p class="hero-location reveal is-visible" data-field="location">Manila, Philippines</p>
+            <div class="hero-actions reveal is-visible">
+                <a class="button button-primary" href="#rsvp">Send RSVP</a>
+                <a class="button button-secondary" href="#details">View details</a>
+            </div>
             <div class="scroll-cue"><span></span>Scroll</div>
         </div>
     </section>
@@ -42,15 +59,16 @@
     <!-- ===================== STORY ===================== -->
     <section id="story" class="section reveal">
         <div class="story-photo reveal-scale">
-            <img src="https://placehold.co/600x750/eab4b8/ffffff?text=Our+Story" alt="Couple story photo placeholder">
+            <img src="https://placehold.co/600x750/eab4b8/ffffff?text=Our+Story"
+                alt="A quiet portrait from the couple's engagement story" loading="lazy" decoding="async">
         </div>
         <div>
             <span class="eyebrow">Our story</span>
-            <p class="story-quote reveal">"[A short, heartfelt line about how you met or a favorite memory together goes
-                here.]"</p>
-            <p class="story-body reveal stagger-1">[A few sentences about your journey as a couple — how you met, a
-                favorite memory, or why you decided it was time to say "I do." Replace this placeholder with your own
-                story.]</p>
+            <p class="story-quote reveal" data-field="storyQuote">The best things in our story have always arrived
+                gently: a shared laugh, a long walk, and the quiet certainty that home could be a person.</p>
+            <p class="story-body reveal stagger-1" data-field="storyBody">What began as easy conversation became our
+                favorite place to return to. We are grateful for every season that brought us here, and we would be
+                honored to celebrate this next chapter with you.</p>
         </div>
     </section>
 
@@ -90,20 +108,25 @@
                     <path d="M12 2v6M8 22h8a2 2 0 0 0 2-2v-6a6 6 0 0 0-12 0v6a2 2 0 0 0 2 2Z" />
                 </svg>
                 <h3>Ceremony</h3>
-                <p class="venue-name">[Ceremony Venue Name]</p>
-                <p>[Venue Address, City]</p>
-                <p>[Time], [Day, Month Date]</p>
-                <a class="detail-link" href="#">View map &rarr;</a>
+                <p class="venue-name" data-field="ceremonyVenue">San Agustin Church</p>
+                <p data-field="ceremonyAddress">General Luna Street, Intramuros, Manila</p>
+                <p><span data-field="ceremonyTime">3:00 PM</span>, <span data-field="displayDate">December 12,
+                        2026</span></p>
+                <p class="detail-note" data-field="ceremonyNote">The ceremony begins promptly. Please arrive 20 minutes
+                    early.</p>
+                <a class="detail-link" href="https://www.google.com/maps" data-map="ceremony">View map &rarr;</a>
             </div>
             <div class="detail-card reveal stagger-2">
                 <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                     <path d="M4 21V9l8-6 8 6v12M9 21v-6h6v6" />
                 </svg>
                 <h3>Reception</h3>
-                <p class="venue-name">[Reception Venue Name]</p>
-                <p>[Venue Address, City]</p>
-                <p>[Time], [Day, Month Date]</p>
-                <a class="detail-link" href="#">View map &rarr;</a>
+                <p class="venue-name" data-field="receptionVenue">The Manila Hotel</p>
+                <p data-field="receptionAddress">One Rizal Park, Manila</p>
+                <p><span data-field="receptionTime">5:30 PM</span>, <span data-field="displayDate">December 12,
+                        2026</span></p>
+                <p class="detail-note" data-field="receptionNote">Dinner, toasts, and dancing will follow.</p>
+                <a class="detail-link" href="https://www.google.com/maps" data-map="reception">View map &rarr;</a>
             </div>
         </div>
     </section>
@@ -116,24 +139,29 @@
         </div>
         <div class="gallery-grid">
             <div class="gallery-item reveal-scale stagger-1">
-                <img src="https://placehold.co/700x850/eab4b8/ffffff?text=Photo+1" alt="placeholder">
-                <p class="gallery-cap">[Caption 1]</p>
+                <img src="https://placehold.co/700x850/eab4b8/ffffff?text=Photo+1" alt="Engagement portrait in warm light"
+                    loading="lazy" decoding="async">
+                <p class="gallery-cap">The yes that started it all</p>
             </div>
             <div class="gallery-item reveal-scale stagger-2">
-                <img src="https://placehold.co/500x600/f7dee0/5a4c46?text=Photo+2" alt="placeholder">
-                <p class="gallery-cap">[Caption 2]</p>
+                <img src="https://placehold.co/500x600/f7dee0/5a4c46?text=Photo+2" alt="Couple walking together"
+                    loading="lazy" decoding="async">
+                <p class="gallery-cap">Quiet mornings</p>
             </div>
             <div class="gallery-item reveal-scale stagger-3">
-                <img src="https://placehold.co/500x600/e8ce8b/241b18?text=Photo+3" alt="placeholder">
-                <p class="gallery-cap">[Caption 3]</p>
+                <img src="https://placehold.co/500x600/e8ce8b/241b18?text=Photo+3" alt="Close-up of wedding details"
+                    loading="lazy" decoding="async">
+                <p class="gallery-cap">Little details</p>
             </div>
             <div class="gallery-item reveal-scale stagger-1">
-                <img src="https://placehold.co/900x450/d4667a/ffffff?text=Photo+4" alt="placeholder">
-                <p class="gallery-cap">[Caption 4]</p>
+                <img src="https://placehold.co/900x450/d4667a/ffffff?text=Photo+4" alt="Couple laughing together"
+                    loading="lazy" decoding="async">
+                <p class="gallery-cap">Our favorite kind of day</p>
             </div>
             <div class="gallery-item reveal-scale stagger-2">
-                <img src="https://placehold.co/500x600/f7dee0/5a4c46?text=Photo+5" alt="placeholder">
-                <p class="gallery-cap">[Caption 5]</p>
+                <img src="https://placehold.co/500x600/f7dee0/5a4c46?text=Photo+5" alt="Romantic pre-wedding portrait"
+                    loading="lazy" decoding="async">
+                <p class="gallery-cap">Almost forever</p>
             </div>
         </div>
     </section>
@@ -148,26 +176,26 @@
             <div class="entourage-col reveal stagger-1">
                 <h3>Parents of the Bride</h3>
                 <ul>
-                    <li><strong>[Parent Name]</strong></li>
-                    <li><strong>[Parent Name]</strong></li>
+                    <li><strong>Antonio Reyes</strong></li>
+                    <li><strong>Elena Reyes</strong></li>
                 </ul>
-                <h3 style="margin-top:2rem;">Principal Sponsors</h3>
+                <h3 class="entourage-subhead">Principal Sponsors</h3>
                 <ul>
-                    <li>[Sponsor Name]</li>
-                    <li>[Sponsor Name]</li>
-                    <li>[Sponsor Name]</li>
+                    <li>Ramon and Liza Cruz</li>
+                    <li>Daniel and Teresa Lim</li>
+                    <li>Paolo and Grace Tan</li>
                 </ul>
             </div>
             <div class="entourage-col reveal stagger-2">
                 <h3>Parents of the Groom</h3>
                 <ul>
-                    <li><strong>[Parent Name]</strong></li>
-                    <li><strong>[Parent Name]</strong></li>
+                    <li><strong>Roberto Santos</strong></li>
+                    <li><strong>Carmen Santos</strong></li>
                 </ul>
-                <h3 style="margin-top:2rem;">Best Man &amp; Maid of Honor</h3>
+                <h3 class="entourage-subhead">Best Man &amp; Maid of Honor</h3>
                 <ul>
-                    <li>[Name]</li>
-                    <li>[Name]</li>
+                    <li>Nico Santos</li>
+                    <li>Bianca Reyes</li>
                 </ul>
             </div>
         </div>
@@ -179,8 +207,8 @@
             <span class="eyebrow">Attire</span>
             <h2>Dress code</h2>
         </div>
-        <p class="dresscode-note reveal">[Formal / Semi-formal attire]. Kindly wear our wedding colors and let the bride
-            shine in white. Suggested palette below.</p>
+        <p class="dresscode-note reveal">Formal garden attire. Kindly wear our wedding colors and let the bride shine in
+            white. Suggested palette below.</p>
         <div class="swatches reveal stagger-1">
             <div class="swatch">
                 <div class="swatch-circle swatch-blush"></div><span>Blush</span>
@@ -201,40 +229,46 @@
     <section id="rsvp" class="section">
         <div class="rsvp-box reveal-scale">
             <h2>Kindly RSVP</h2>
-            <p class="rsvp-sub">Please respond by [RSVP Deadline Date]</p>
+            <p class="rsvp-sub">Please respond by <span data-field="rsvpDeadline">November 15, 2026</span></p>
             <form id="rsvp-form">
                 <div class="form-row">
                     <label for="name">Full name</label>
-                    <input type="text" id="name" placeholder="Juan Dela Cruz" required>
+                    <input type="text" id="name" name="guestName" placeholder="Juan Dela Cruz" autocomplete="name"
+                        required>
                 </div>
                 <div class="form-row">
                     <label>Will you attend?</label>
                     <div class="radio-group">
-                        <label><input type="radio" name="attend" value="yes" checked> Joyfully accept</label>
-                        <label><input type="radio" name="attend" value="no"> Regretfully decline</label>
+                        <label for="attend-yes"><input type="radio" id="attend-yes" name="attend" value="yes" checked>
+                            Joyfully accept</label>
+                        <label for="attend-no"><input type="radio" id="attend-no" name="attend" value="no"> Regretfully
+                            decline</label>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="guests">Number of guests</label>
-                    <input type="text" id="guests" placeholder="e.g. 2">
+                    <input type="number" id="guests" name="guests" min="1" max="10" value="1" inputmode="numeric">
                 </div>
                 <div class="form-row">
                     <label for="message">Message for the couple</label>
-                    <textarea id="message" placeholder="Leave a well-wish..."></textarea>
+                    <textarea id="message" name="message" placeholder="Leave a well-wish..."></textarea>
                 </div>
-                <button type="submit" class="rsvp-submit">Send RSVP</button>
-                <p class="rsvp-thanks" id="rsvp-thanks">Thank you! We can't wait to celebrate with you. &hearts;</p>
+                <button type="submit" class="rsvp-submit">Prepare RSVP email</button>
+                <p class="form-status" id="rsvp-status" aria-live="polite"></p>
+                <p class="rsvp-thanks" id="rsvp-thanks" hidden>Thank you! We can't wait to celebrate with you.</p>
             </form>
             <p class="rsvp-alt">
-                Or reach us directly at <strong>[RSVP Contact Number / Email]</strong>
+                Or reach us directly at <a id="rsvp-contact" href="mailto:rsvp@example.com">rsvp@example.com</a>
             </p>
         </div>
     </section>
 
+    </main>
+
     <!-- ===================== FOOTER ===================== -->
     <footer id="site-footer">
-        <div class="footer-amp">[B] &amp; [G]</div>
-        <p class="footer-hashtag">#[WeddingHashtag]</p>
+        <div class="footer-amp" data-field="initials">M &amp; J</div>
+        <p class="footer-hashtag" data-field="hashtag">#MaraAndJulian2026</p>
         <p class="footer-note">Thank you for being part of our story. We can't wait to celebrate this new chapter with
             the people we love most.</p>
     </footer>
